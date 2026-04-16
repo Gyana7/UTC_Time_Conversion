@@ -45,7 +45,7 @@ public class UtcFormat {
        // instant = Pure UTC time no Timezone Information (e.g 2026-04-16T14:00Z)
         Instant instant = utcZoned.toInstant();
                 
-       // Date utcDate = Date.from(Instant);
+        //Date utcDate = Date.from(instant);
         
 //        //  converting Date to String And String to Date
 //        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");

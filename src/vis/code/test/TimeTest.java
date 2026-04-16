@@ -20,6 +20,9 @@ public class TimeTest {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         while(true){
+            
+           try{
+               
         System.out.println("Enter Time (dd-MM-yyyy HH:mm:ss):OR type Exit to stop");
         String time = sc.nextLine();
         
@@ -48,6 +51,12 @@ public class TimeTest {
             
             
             EntityManagerFactoryCreation.insertuser(user);
+            
+          }catch(Exception ex){
+              System.out.println(ex.getLocalizedMessage());
+              continue;
+              
+          } // while loop close
             
            // System.out.println(date);
         }
