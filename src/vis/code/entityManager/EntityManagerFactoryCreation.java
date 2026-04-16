@@ -7,6 +7,7 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
+import java.time.Instant;
 import vis.code.entites.User;
 
 
@@ -37,9 +38,13 @@ public class EntityManagerFactoryCreation {
                  transaction.begin();
                  
                 entityManager.persist(user);
-                transaction.commit();
-                System.out.println("user saved Sucessfully");
+               // transaction.commit();
                 
+            User find = entityManager.find(User.class, user.getId());
+            Instant createdAt = find.getCreatedAt();
+            System.out.println("created at user is:"+createdAt);
+               // System.out.println("user saved Sucessfully");
+                transaction.commit();
                 }catch(Exception ex){
                     transaction.rollback();
                 }finally{

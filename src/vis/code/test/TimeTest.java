@@ -20,10 +20,10 @@ public class TimeTest {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         while(true){
-        System.out.println("Enter Time (yyyy-MM-dd HH:mm:ss):OR type Exist to stop");
+        System.out.println("Enter Time (dd-MM-yyyy HH:mm:ss):OR type Exit to stop");
         String time = sc.nextLine();
         
-         if (time.equalsIgnoreCase("Exist")){
+         if (time.equalsIgnoreCase("Exit")){
             System.out.println("Thank You for using this System");
             break;
          }

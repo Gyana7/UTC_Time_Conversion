@@ -40,10 +40,7 @@ public class User  {
     private Instant createdAt;
     
     
-//     @PrePersist
-//    public void onCreate() {
-//        this.createdAt = Instant.now();
-//    }
+
     
     // Constructor
     
