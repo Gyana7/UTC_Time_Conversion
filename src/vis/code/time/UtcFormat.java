@@ -59,12 +59,5 @@ public class UtcFormat {
         
         return instant;
        // return utcDate;
-    }
-    
-//    public static LocalDateTime parese(String time){
-//        DateTimeFormatter formatter 
-//        
-//        return  null;
-//    }
-    
+    }  
 }
